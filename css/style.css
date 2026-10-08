@@ -180,9 +180,86 @@ ul li {
   margin-top: 0;
 }
 
-/* 首页导航列表 */
+/* 首页：大类导航 */
+.category-nav {
+  list-style: none;
+}
+
+.category-nav li {
+  margin-bottom: 10px;
+}
+
+.category-nav a {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--text);
+  background: #fffdf9;
+}
+
+.category-nav a:hover {
+  border-color: var(--accent);
+}
+
+.category-nav a:hover .cat-name {
+  color: var(--accent);
+}
+
+.cat-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.cat-desc {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* 大类页：小类筛选标签 */
+.subcat-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.subcat-jump button {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-family: inherit;
+  line-height: 1.4;
+  background: #fffdf9;
+  cursor: pointer;
+}
+
+.subcat-jump button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.subcat-jump button.is-active {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff;
+}
+
+/* 筛选隐藏的分区 */
+.card[data-subcat-panel][hidden] {
+  display: none;
+}
+
+/* 菜谱列表（大类页内） */
 .recipe-nav {
   list-style: none;
+  padding-left: 0;
 }
 
 .recipe-nav li {
@@ -204,6 +281,13 @@ ul li {
 .recipe-nav a:hover {
   border-color: var(--accent);
   color: var(--accent);
+}
+
+.recipe-nav .empty-hint {
+  color: var(--muted);
+  font-size: 0.9rem;
+  padding: 4px 0;
+  margin-bottom: 0;
 }
 
 .thumb {

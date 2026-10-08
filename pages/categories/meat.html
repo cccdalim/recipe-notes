@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>荤菜</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <a class="back-link" href="../../index.html">← 返回菜谱目录</a>
+      <h1>荤菜</h1>
+      <p class="subtitle">点小类标签筛选菜谱，再点菜名进入详情。</p>
+
+      <!-- 小类切换（由 js/subcat.js 控制显示） -->
+      <nav class="subcat-jump" data-subcat-nav aria-label="小类筛选">
+        <button type="button" class="is-active" data-subcat="all">全部</button>
+        <button type="button" data-subcat="pork">猪肉</button>
+        <button type="button" data-subcat="beef">牛肉</button>
+        <button type="button" data-subcat="lamb">羊肉</button>
+        <button type="button" data-subcat="poultry">禽肉</button>
+        <button type="button" data-subcat="seafood">水产</button>
+      </nav>
+    </section>
+
+    <section class="card" data-subcat-panel="pork" id="pork">
+      <h2>猪肉</h2>
+      <ul class="recipe-nav">
+        <!-- 新增猪肉菜：复制下面 li，改链接与文字 -->
+        <li class="empty-hint">暂无菜谱，在 pages/ 新建后在此添加链接。</li>
+      </ul>
+    </section>
+
+    <section class="card" data-subcat-panel="beef" id="beef">
+      <h2>牛肉</h2>
+      <ul class="recipe-nav">
+        <li>
+          <a href="../beef.html">
+            <!-- 此处为菜品成品图，自行替换img/内图片 -->
+            <img class="thumb" src="../../img/beef.jpg" alt="番茄炖牛肉缩略图">
+            <span>番茄炖牛肉</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card" data-subcat-panel="lamb" id="lamb">
+      <h2>羊肉</h2>
+      <ul class="recipe-nav">
+        <li>
+          <a href="../lamb.html">
+            <!-- 此处为菜品成品图，自行替换img/内图片 -->
+            <img class="thumb" src="../../img/lamb.jpg" alt="孜然烤羊排缩略图">
+            <span>孜然烤羊排</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card" data-subcat-panel="poultry" id="poultry">
+      <h2>禽肉</h2>
+      <ul class="recipe-nav">
+        <li class="empty-hint">暂无菜谱，在 pages/ 新建后在此添加链接。</li>
+      </ul>
+    </section>
+
+    <section class="card" data-subcat-panel="seafood" id="seafood">
+      <h2>水产</h2>
+      <ul class="recipe-nav">
+        <li class="empty-hint">暂无菜谱，在 pages/ 新建后在此添加链接。</li>
+      </ul>
+    </section>
+  </main>
+  <script src="../../js/subcat.js"></script>
+</body>
+</html>

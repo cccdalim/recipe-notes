@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>汤类</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <a class="back-link" href="../../index.html">← 返回菜谱目录</a>
+      <h1>汤类</h1>
+      <p class="subtitle">点小类标签筛选菜谱，再点菜名进入详情。</p>
+
+      <nav class="subcat-jump" data-subcat-nav aria-label="小类筛选">
+        <button type="button" class="is-active" data-subcat="all">全部</button>
+        <button type="button" data-subcat="meat-soup">肉汤</button>
+        <button type="button" data-subcat="veg-soup">素汤</button>
+        <button type="button" data-subcat="porridge">粥羹</button>
+      </nav>
+    </section>
+
+    <section class="card" data-subcat-panel="meat-soup" id="meat-soup">
+      <h2>肉汤</h2>
+      <ul class="recipe-nav">
+        <li class="empty-hint">暂无菜谱，在 pages/ 新建后在此添加链接。</li>
+      </ul>
+    </section>
+
+    <section class="card" data-subcat-panel="veg-soup" id="veg-soup">
+      <h2>素汤</h2>
+      <ul class="recipe-nav">
+        <li class="empty-hint">暂无菜谱，在 pages/ 新建后在此添加链接。</li>
+      </ul>
+    </section>
+
+    <section class="card" data-subcat-panel="porridge" id="porridge">
+      <h2>粥羹</h2>
+      <ul class="recipe-nav">
+        <li class="empty-hint">暂无菜谱，在 pages/ 新建后在此添加链接。</li>
+      </ul>
+    </section>
+  </main>
+  <script src="../../js/subcat.js"></script>
+</body>
+</html>

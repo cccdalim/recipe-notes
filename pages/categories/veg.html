@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>素菜</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <a class="back-link" href="../../index.html">← 返回菜谱目录</a>
+      <h1>素菜</h1>
+      <p class="subtitle">点小类标签筛选菜谱，再点菜名进入详情。</p>
+
+      <nav class="subcat-jump" data-subcat-nav aria-label="小类筛选">
+        <button type="button" class="is-active" data-subcat="all">全部</button>
+        <button type="button" data-subcat="leafy">叶菜</button>
+        <button type="button" data-subcat="gourd">瓜果</button>
+        <button type="button" data-subcat="tofu">豆制品</button>
+        <button type="button" data-subcat="mushroom">菌菇</button>
+      </nav>
+    </section>
+
+    <section class="card" data-subcat-panel="leafy" id="leafy">
+      <h2>叶菜</h2>
+      <ul class="recipe-nav">
+        <li class="empty-hint">暂无菜谱，在 pages/ 新建后在此添加链接。</li>
+      </ul>
+    </section>
+
+    <section class="card" data-subcat-panel="gourd" id="gourd">
+      <h2>瓜果</h2>
+      <ul class="recipe-nav">
+        <li class="empty-hint">暂无菜谱，在 pages/ 新建后在此添加链接。</li>
+      </ul>
+    </section>
+
+    <section class="card" data-subcat-panel="tofu" id="tofu">
+      <h2>豆制品</h2>
+      <ul class="recipe-nav">
+        <li class="empty-hint">暂无菜谱，在 pages/ 新建后在此添加链接。</li>
+      </ul>
+    </section>
+
+    <section class="card" data-subcat-panel="mushroom" id="mushroom">
+      <h2>菌菇</h2>
+      <ul class="recipe-nav">
+        <li class="empty-hint">暂无菜谱，在 pages/ 新建后在此添加链接。</li>
+      </ul>
+    </section>
+  </main>
+  <script src="../../js/subcat.js"></script>
+</body>
+</html>

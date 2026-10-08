@@ -8,36 +8,40 @@
 </head>
 <body>
   <main class="page">
-    <!-- 首页导航：新增菜谱时，在下方 ul 中增加一条 li 即可 -->
+    <!-- 首页只列大类；新增大类时在下方 ul 加一条即可 -->
     <section class="card">
       <h1>我的菜谱本</h1>
-      <p class="subtitle">手机可看的个人菜谱目录。点击卡片进入详情。</p>
+      <p class="subtitle">先选大类，再按小类找菜。</p>
 
-      <ul class="recipe-nav">
+      <ul class="category-nav">
         <li>
-          <a href="pages/beef.html">
-            <!-- 此处为菜品成品图，自行替换img/内图片 -->
-            <img class="thumb" src="img/beef.jpg" alt="番茄炖牛肉缩略图">
-            <span>番茄炖牛肉</span>
+          <a href="pages/categories/meat.html">
+            <span class="cat-name">荤菜</span>
+            <span class="cat-desc">猪肉 · 牛肉 · 羊肉 · 禽肉 · 水产</span>
           </a>
         </li>
         <li>
-          <a href="pages/lamb.html">
-            <!-- 此处为菜品成品图，自行替换img/内图片 -->
-            <img class="thumb" src="img/lamb.jpg" alt="孜然烤羊排缩略图">
-            <span>孜然烤羊排</span>
+          <a href="pages/categories/veg.html">
+            <span class="cat-name">素菜</span>
+            <span class="cat-desc">叶菜 · 瓜果 · 豆制品 · 菌菇</span>
           </a>
         </li>
-        <!-- 新增菜谱示例：
         <li>
-          <a href="pages/xxx.html">
-            <img class="thumb" src="img/xxx.jpg" alt="菜名缩略图">
-            <span>新菜名</span>
+          <a href="pages/categories/soup.html">
+            <span class="cat-name">汤类</span>
+            <span class="cat-desc">肉汤 · 素汤 · 粥羹</span>
+          </a>
+        </li>
+        <!-- 新增大类示例：
+        <li>
+          <a href="pages/categories/xxx.html">
+            <span class="cat-name">主食</span>
+            <span class="cat-desc">米饭 · 面点 · 饼类</span>
           </a>
         </li>
         -->
       </ul>
-      <p class="add-hint">新增菜谱：在 pages/ 新建 html，再在本列表加一条链接。</p>
+      <p class="add-hint">新增菜谱：在 pages/ 新建详情页 → 在对应大类页（categories/）对应小类下加链接。</p>
     </section>
   </main>
   <footer>个人菜谱 · 可部署 GitHub Pages</footer>
