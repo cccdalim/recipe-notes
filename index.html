@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的菜谱本</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="page">
+    <!-- 首页导航：新增菜谱时，在下方 ul 中增加一条 li 即可 -->
+    <section class="card">
+      <h1>我的菜谱本</h1>
+      <p class="subtitle">手机可看的个人菜谱目录。点击卡片进入详情。</p>
+
+      <ul class="recipe-nav">
+        <li>
+          <a href="pages/beef.html">
+            <!-- 此处为菜品成品图，自行替换img/内图片 -->
+            <img class="thumb" src="img/beef.jpg" alt="番茄炖牛肉缩略图">
+            <span>番茄炖牛肉</span>
+          </a>
+        </li>
+        <li>
+          <a href="pages/lamb.html">
+            <!-- 此处为菜品成品图，自行替换img/内图片 -->
+            <img class="thumb" src="img/lamb.jpg" alt="孜然烤羊排缩略图">
+            <span>孜然烤羊排</span>
+          </a>
+        </li>
+        <!-- 新增菜谱示例：
+        <li>
+          <a href="pages/xxx.html">
+            <img class="thumb" src="img/xxx.jpg" alt="菜名缩略图">
+            <span>新菜名</span>
+          </a>
+        </li>
+        -->
+      </ul>
+      <p class="add-hint">新增菜谱：在 pages/ 新建 html，再在本列表加一条链接。</p>
+    </section>
+  </main>
+  <footer>个人菜谱 · 可部署 GitHub Pages</footer>
+</body>
+</html>

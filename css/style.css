@@ -1,0 +1,229 @@
+/* ========================================
+   个人菜谱本 · 全局共用样式
+   新增菜谱页只需引入本文件，无需重复写样式
+   ======================================== */
+
+:root {
+  --bg: #f4efe6;
+  --card: #ffffff;
+  --text: #2c241b;
+  --muted: #6b5e4f;
+  --accent: #c45c26;
+  --accent-hover: #9a4318;
+  --line: #e6d9c8;
+  --note-bg: #fff8e6;
+  --radius: 16px;
+  --shadow: 0 8px 24px rgba(80, 52, 28, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  padding: 16px;
+}
+
+/* 手机优先：内容居中，最大宽度 720px */
+.page {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px 18px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--line);
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+
+/* 返回首页链接 */
+.back-link {
+  display: inline-block;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.back-link:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+/* 图片自适应：成品图 + 首页缩略图 */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.recipe-photo {
+  width: 100%;
+  border-radius: 12px;
+  margin: 12px 0 4px;
+  background: #efe6d8;
+  min-height: 180px;
+  object-fit: cover;
+}
+
+.photo-hint {
+  color: var(--muted);
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+}
+
+/* 基础信息 */
+.info-list {
+  list-style: none;
+}
+
+.info-list li {
+  padding: 6px 0;
+  border-bottom: 1px dashed var(--line);
+}
+
+.info-list li:last-child {
+  border-bottom: none;
+}
+
+.info-list strong {
+  color: var(--accent);
+  margin-right: 6px;
+}
+
+/* 食材表格 */
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+th,
+td {
+  border: 1px solid var(--line);
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #f7f0e6;
+  font-weight: 600;
+}
+
+/* 步骤与预处理 */
+ol,
+ul {
+  padding-left: 1.25rem;
+}
+
+ol li,
+ul li {
+  margin-bottom: 8px;
+}
+
+.params p,
+.seasoning p {
+  margin-bottom: 8px;
+}
+
+/* 复盘笔记：浅黄背景 */
+.notes {
+  background: var(--note-bg);
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid #f0e2b8;
+}
+
+.notes h3 {
+  font-size: 1rem;
+  margin: 12px 0 6px;
+}
+
+.notes h3:first-child {
+  margin-top: 0;
+}
+
+/* 首页导航列表 */
+.recipe-nav {
+  list-style: none;
+}
+
+.recipe-nav li {
+  margin-bottom: 10px;
+}
+
+.recipe-nav a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--text);
+  background: #fffdf9;
+}
+
+.recipe-nav a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.thumb {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background: #efe6d8;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.add-hint {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.8rem;
+  padding: 8px 0 24px;
+}
